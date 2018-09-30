@@ -1,0 +1,30 @@
+{
+  "name": "zeb",
+  "version": "0.0.0",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --timeout 10000",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "8.11.3"
+  },
+  "dependencies": {
+    "compression": "^1.7.3",
+    "cookie-parser": "~1.4.3",
+    "csvtojson": "^2.0.8",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "helmet": "^3.13.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.2.18",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "jshint": "^2.9.6",
+    "mocha": "^5.2.0"
+  }
+}

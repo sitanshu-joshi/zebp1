@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet", href="https://www.w3schools.com/w3css/4/w3.css")
+    body
+        p Welcome to #{title}
+        //ul
+        //    each val in data
+        //        li= val.name
+        //    else
+        //        li There are no values
+        table(class="w3-table-all w3-centered")
+            tr
+                th Name
+                th Year
+                th Battle Number
+                th Attacker King
+                th Defender King
+                th Type
+                th Location
+            each val in data
+                tr
+                    td #{val.name}
+                    td #{val.year}
+                    td #{val.battle_number}
+                    td #{val.attacker_king}
+                    td #{val.defender_king}
+                    td #{val.battle_type}
+                    td #{val.location}
